@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Gestão de Projetos</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body class="bg-center">
+
+<div class="page-container small-container">
+    <div class="admin-panel">
+        <div class="brand-header">
+            <h2>Plataforma Académica</h2>
+            <p>Gestão de Projetos & Acompanhamento</p>
+        </div>
+
+        <form class="login-form" name="Login" method="post" action="autentica.php" onsubmit="return validarLogin(this);">
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" class="input-field" placeholder="exemplo@escola.pt" required>
+            </div>
+
+            <div class="form-group">
+                <label for="pass">Password</label>
+                <input type="password" id="pass" name="pass" class="input-field" placeholder="••••••••" required>
+            </div>
+
+            <div class="button-group">
+                <input type="submit" value="Iniciar Sessão" class="btn btn-primary btn-full">
+            </div>
+
+            <div class="auth-link">
+                <p>Ainda não tem conta? <a href="registo.php">Criar conta</a></p>
+            </div>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
